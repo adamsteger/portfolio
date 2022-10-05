@@ -63,13 +63,10 @@ public class Admin extends User {
      * @param lowPay An integer of the lowest pay an applicant could receive for the internship being added
      * @param highPay An integer of the highest pay an applicant could receive for the internship being added
      */
-    public boolean addPost(InternshipPost post) {
-        if (post == null || post.getEmployerTitle() == "")
-            return false;
-        InternshipList internshipList = InternshipList.getInstance();
-        internshipList.addInternship(post);
-        internshipList.save();
-        return true;
+    public void addPost(String employerTitle, String posTitle, String description, String location, ArrayList<Skill> skillReq, String startDate, String endDate, boolean isRemote, boolean isOpen, int lowPay, int highPay) {
+       InternshipList internshipList = InternshipList.getInstance();
+       internshipList.addInternship(new InternshipPost(employerTitle, posTitle, description, location, skillReq, startDate, endDate, isRemote, isOpen, lowPay, highPay));
+       internshipList.save();
     }
 
     /**

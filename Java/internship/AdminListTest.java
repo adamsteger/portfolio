@@ -1,7 +1,3 @@
-/**
- *  @author Ana Boccanfuso
- */
-
 import static org.junit.Assert.*;
 import org.junit.*;
 import java.util.ArrayList;

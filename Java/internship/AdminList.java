@@ -82,7 +82,7 @@ public class AdminList {
      * @return Returns true if the admin is successfully added and false if not
      */
     public boolean addAdmin(Admin admin){
-        if(admin == null || haveAdmin(admin.getUsername()) || admin.getUsername() == "" || admin.getPassword() == "")
+        if(haveAdmin(admin.getUsername()))
             return false;
 
         admins.add(admin);
