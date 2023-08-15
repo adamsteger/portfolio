@@ -1,0 +1,3 @@
+[submodule "computation"]
+	path = computation
+	url = https://github.com/adamsteger/computation.git
