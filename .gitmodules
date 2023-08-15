@@ -1,3 +1,6 @@
 [submodule "computation"]
 	path = computation
 	url = https://github.com/adamsteger/computation.git
+[submodule "LifesABit"]
+	path = LifesABit
+	url = https://github.com/SCCapstone/LifesABit.git
